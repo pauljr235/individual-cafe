@@ -1,0 +1,728 @@
+.container {
+    max-width: 1280px;
+    /*Limite da largura em todos as telas*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* HEADER AND ABOUT SECTION*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f2937;
+    /* position: fixed;
+    top: 5rem; */
+    width: 83%;
+    margin-top: 8rem;
+
+
+
+}
+
+
+header img {
+    height: 70px;
+    width: 70px;
+    margin-top: 30px;
+    border: none;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    gap: 25rem;
+    margin-left: 3.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+nav ul a {
+    color: #E5e7eb;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+@media (max-width: 615px) {
+
+    .contacts {
+        display: table-row;
+        ;
+    }
+
+    .contacts-header {
+        margin-left: 0;
+        width: 90vw;
+    }
+
+    .contacts-header ul {
+        display: block;
+    }
+
+    .contacts-nav-bar {
+        display: flex;
+        justify-content: space-between;
+        width: 83%;
+        gap: 0;
+        margin-left: 0;
+    }
+
+
+
+
+
+
+}
+
+
+
+.about {
+    background-color: #1f2937;
+    height: calc(70vh + 10px);
+    padding: 100px;
+}
+
+.about h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: "Roboto, sans-serif";
+
+}
+
+
+.about span {
+    display: flex;
+    color: white;
+    gap: 24px;
+    text-align: center;
+
+
+}
+
+.about span img {
+    width: 1168px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+
+.about p {
+    text-align: start;
+
+    font-family: "Roboto, sans-serif";
+    font-size: 24px;
+}
+
+.about a {
+    text-decoration: none;
+}
+
+.about button {
+    background-color: #3882f6;
+    padding: 8px 16px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-family: "Roboto", serif;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+/*ABOUT PAGE*/
+
+/* Configurando a imagem de fundo do hero */
+.hero {
+    height: 100vh;
+    background-image: url('./images/pexels-rdne-4920856.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-content {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.hero-content p {
+    font-size: 20px
+}
+
+.hero-header {
+    width: 100vw;
+}
+
+
+.hero-content h1 {
+    text-align: center;
+}
+
+
+
+
+
+.locations {
+    padding: 50px;
+    background-color: #e5e7eb;
+}
+
+.locations a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.locations .container figure {
+    margin-left: 170px;
+    gap: 50px;
+
+
+}
+
+
+.locations .container img {
+    height: 300px;
+    width: 300px;
+
+}
+
+.locations figure {
+    text-align: center;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-about {
+    width: 98vw;
+    margin-left: 1px;
+}
+
+
+
+
+/* INFO SECTION*/
+
+.info-section {
+    text-align: center;
+
+    margin-top: 2em;
+    margin-left: 3rem;
+    margin-right: 0rem;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+
+.scroll-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.25em;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+}
+
+
+.random-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 20px;
+
+
+}
+
+figure {
+
+    text-align: center;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 120px;
+    margin: 2em;
+}
+
+
+img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    /* Crop or fit image to the box */
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: black;
+    margin-top: 10px;
+    max-width: 120px;
+}
+
+
+
+
+
+/*REVIEW SECTION*/
+
+.reviews .container {
+    background-color: #e5e7eb;
+    margin-bottom: 32px;
+    padding: 16px;
+
+}
+
+.reviews p {
+    font-size: 20px;
+    font-style: italic;
+    color: #1F2937;
+
+}
+
+
+.reviews h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1F2937;
+    font-family: "Roboto, sans-serif";
+}
+
+.reviews h4 {
+    text-align: center;
+}
+
+/*ACTION*/
+
+#action {
+    margin: none;
+    padding: 8px;
+    text-align: center;
+    width: 50vw;
+    margin-left: 350px;
+    margin-bottom: 32px;
+    color: white;
+
+}
+
+
+
+#action button {
+    background-color: rgb(0, 119, 255);
+    color: antiquewhite;
+    width: 8rem;
+    height: 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 310px;
+    border: 1px solid white;
+
+}
+
+
+
+/*CONTACTS SECTION*/
+
+.contacts-header {
+    width: 100vw;
+
+}
+
+
+
+.contacts {
+    /* margin-top: 70px;  */
+    padding: 50px;
+    background-color: #3882f6;
+    color: #E5E7EB;
+    text-align: center;
+    margin-right: 127px;
+    width: 100vw;
+
+
+
+}
+
+.contacts h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-family: "Roboto, sans-serif";
+    text-align: center;
+    padding: 32px;
+    margin-right: 50px;
+}
+
+.contacts h2 {
+    font-size: 36px;
+    color: #F9FAF8;
+    font-family: "Roboto, sans-serif";
+
+
+}
+
+.contacts button {
+    background-color: #3882f6;
+    padding: 12px;
+    width: 50%;
+}
+
+
+.contact-methods li {
+    display: inline-block;
+    padding-bottom: 16px;
+    font-size: 18px;
+
+}
+
+.contact-methods {
+    margin-left: 150px;
+    width: 500px;
+    font-family: "Roboto, sans-serif";
+    font-weight: bold;
+    background-color: #1f2937;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 20px;
+
+}
+
+
+.contact-methods img {
+    height: 30px;
+    width: 30px;
+    margin-right: 16px;
+}
+
+.contacts .container {
+    display: flex;
+    gap: 20px;
+
+    /* Space between the elements */
+}
+
+.footer-contact {
+    background-color: #1f2937;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 83%;
+    margin-top: 70px;
+    margin-left: 157px;
+    margin-bottom: 180px;
+}
+
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Roboto, sans-serif";
+    font-size: 16px;
+}
+
+textarea {
+    height: 80px;
+
+}
+
+.questions {
+    background-color: #1f2937;
+    padding: 16px;
+    border-radius: 8px;
+    margin-left: 150px;
+
+}
+
+.questions button {
+    margin-left: 85px;
+    background-color: #52719c;
+    color: white;
+    font-weight: bold;
+}
+
+.social-media {
+    padding-right: 24px;
+}
+
+footer {
+    background-color: #1f2937;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 87%;
+    margin-left: 100px;
+
+
+}
+
+@media (max-width: 615px) {
+
+
+
+    .questions form {
+        margin-left: 10px
+    }
+
+    .questions form button {
+        margin-left: 120px
+    }
+
+
+    .contacts-header {
+        margin-left: 0;
+        width: 93vw;
+    }
+
+    .contacts-nav-bar {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    .contacts-nav-bar img {
+        margin-top: 60px;
+    }
+
+    #contacts-container {
+        display: block;
+        width: 93vw;
+
+    }
+
+    .contacts .questions input,
+    textarea {
+        margin-left: 80px;
+    }
+
+    .contacts button {
+        margin-left: 150px;
+    }
+
+    .contacts .questions {
+        margin-left: 0;
+
+    }
+
+    .contact-methods {
+        margin-left: 0;
+        width: 88vw;
+    }
+
+    .footer-contact {
+        margin-left: 0;
+        width: 93vw;
+    }
+}
+
+
+/*MEDIA QUERY ABOUT PAGE*/
+
+
+@media (max-width:615px) {
+
+    .hero {
+        height: 90vh;
+        max-width: 94.3vw;
+    }
+
+    .hero-content {
+        padding: 0;
+    }
+
+    .hero-content p {
+        font-size: 18px
+    }
+}
+
+.hero-header img {
+    height: 70px;
+    width: 70px;
+    margin-top: 30px;
+
+}
+
+
+.hero-content button {
+    border-radius: 20px;
+    padding: 16px;
+
+}
+
+@media (max-width: 615px) {
+    .hero-header {
+        position: relative;
+
+    }
+
+    .hero-header img {
+
+        margin-left: 16px;
+        margin-bottom: 30px;
+    }
+
+    .hero-nav-bar {
+        align-items: center;
+        margin-right: 32px;
+    }
+
+    .hero-nav-bar ul {
+        align-items: center;
+        margin-right: 16px;
+        margin-top: 10px;
+        display: block;
+    }
+
+}
+
+@media (min-width: 615px) and (max-width: 1400px) {
+    .hero-header {
+        position: relative;
+        width: 97.3vw;
+    }
+
+    .hero-header img {
+
+        margin-left: 16px;
+        margin-bottom: 30px;
+    }
+
+    .hero-nav-bar {
+        align-items: center;
+        margin-left: 0;
+        gap: 0;
+
+
+    }
+
+    .hero-nav-bar ul {
+        align-items: center;
+        margin-top: 10px;
+        display: block;
+        margin-left: 0;
+
+    }
+
+}
+
+@media (max-width: 615px) {
+
+    .locations {
+        background-color: #e5e7eb;
+        width: 78.1vw;
+
+    }
+
+    .locations h2 {
+        margin-left: 170px;
+    }
+
+
+    .locations .container figure {
+        margin-left: 0;
+        gap: 50px;
+        display: block;
+        margin-left: 60px;
+
+    }
+
+
+    .figure-locations div {
+        width: 355px;
+
+
+    }
+
+    .footer-about {
+        display: block;
+        width: 94.1vw;
+        text-align: center;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+
+
+}
+
+@media (min-width: 615px) and (max-width: 1400px) {
+
+
+    .locations h2 {
+        margin-left: 180px;
+    }
+
+
+    .locations .container figure {
+        margin-left: 0;
+        gap: 50px;
+        display: ruby;
+    }
+
+    .figure-locations div {
+        width: 500px;
+    }
+
+    .footer-about {
+        display: block;
+        width: 97.5vw;
+        text-align: center;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+
+
+}
